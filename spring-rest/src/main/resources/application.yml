@@ -1,0 +1,14 @@
+server:
+  port: 8001
+
+spring:
+  datasource:
+    jdbcUrl: jdbc:h2:mem:mydb
+    username: h2_user
+    password: h2_pass
+    driverClassName: org.h2.Driver
+  jpa:
+    spring.jpa.database-platform: org.hibernate.dialect.H2Dialect
+    hibernate.ddl-auto: update
+  h2:
+    console.enabled: true
